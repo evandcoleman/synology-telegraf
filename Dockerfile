@@ -17,3 +17,4 @@ RUN export  DEBIAN_FRONTEND=noninteractive && \
     rm -r /var/lib/apt/lists/* && \
     mkdir -p /usr/share/snmp/mibs
 COPY mibs/* /usr/share/snmp/mibs/
+COPY telegraf.conf /etc/telegraf/telegraf.conf
